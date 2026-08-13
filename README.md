@@ -20,10 +20,9 @@ language model answering questions about your car over OBD-II, an emulator
 running a 1970s CPU in your browser.
 
 Most of what I know about writing software came from one habit: proving it
-works. At **AfterQuery (YC25)** I write SWE-bench-style training tasks for
-frontier AI models, reading real bugs in real codebases and building test
-harnesses that can tell a correct fix from a plausible-looking one. That's
-stuck with me. If I say something works, I've run it.
+works. At **AfterQuery (YC25)** I wrote SWE-bench-style training tasks for
+frontier AI models, reading real bugs in codebases and building test
+harnesses that can tell a correct fix.
 
 **Right now**
 
