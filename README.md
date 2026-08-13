@@ -12,30 +12,30 @@
 
 ---
 
-## About
+## 👋 About
 
-I like building at the layer where software stops being abstract — a map that
+I like building at the layer where software stops being abstract, a map that
 turns strangers' photographs into a permanent archive of a neighbourhood, a
 language model answering questions about your car over OBD-II, an emulator
 running a 1970s CPU in your browser.
 
 Most of what I know about writing software came from one habit: proving it
 works. At **AfterQuery (YC25)** I write SWE-bench-style training tasks for
-frontier AI models — reading real bugs in real codebases and building test
+frontier AI models, reading real bugs in real codebases and building test
 harnesses that can tell a correct fix from a plausible-looking one. That's
 stuck with me. If I say something works, I've run it.
 
 **Right now**
 
-- Building **car-ai** — a local LLM on a Raspberry Pi 5 answering questions about a car over OBD-II, with nothing leaving the vehicle
-- **Software Engineer, AI Training @ AfterQuery (YC25)** — evaluation tasks for frontier models
-- **Co-Founder @ LiveHub** — an iOS app matching students with study partners by course and interest
-- **Winner — TECHNATION Data Intelligence track**, SummerHacks 2026
-- **B.Eng Computer Engineering**, University of Guelph — expected May 2029
+- 🔧 Building **car-ai**; a local LLM on a Raspberry Pi 5 answering questions about a car over OBD-II, with nothing leaving the vehicle
+- 💼 **Software Engineer, AI Training @ AfterQuery (YC25)**; evaluation tasks for frontier models
+- 📱 **Co-Founder @ LiveHub**; an iOS app matching students with study partners by course and interest
+- 🏆 **Winner, TECHNATION Data Intelligence track**, SummerHacks 2026
+- 🎓 **B.Eng Computer Engineering**, University of Guelph, expected May 2029
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 **Languages**
 
@@ -79,18 +79,18 @@ stuck with me. If I say something works, I've run it.
 
 ---
 
-## Things I've built
+## 🚀 Things I've built
 
-**[LandMarked](https://github.com/iqureshi123/landmarked-summerhacks)** · `TypeScript` · `MapLibre` — Winner, TECHNATION track
+**[LandMarked](https://github.com/iqureshi123/landmarked-summerhacks)** · `TypeScript` · `MapLibre`; Winner, TECHNATION track
 
 A location game where you claim real places by photographing them. Stand at a
-landmark, take one photo, and you hold it for three hours — until someone takes
+landmark, take one photo, and you hold it for three hours, until someone takes
 it from you. The claim rotates; the photograph never does. Every accepted photo
 joins that place's permanent archive, and its pixels feed a live reading of what
 colour the neighbourhood is right now.
 
 Built in 26 hours at SummerHacks 2026 with a team of three, across 4,235 real
-places pulled from OpenStreetMap. I owned the frontend — a hand-drawn SVG icon
+places pulled from OpenStreetMap. I owned the frontend: a hand-drawn SVG icon
 system, interaction design, and the correctness pass, including catching a
 statistic in our own pitch deck that the live dashboard would have contradicted
 on stage.
@@ -99,7 +99,7 @@ on stage.
 
 An on-device AI diagnostic assistant for cars. A local LLM (`llama3.2:3b`)
 running on a Raspberry Pi 5 answers plain-English questions about your vehicle
-by calling OBD-II tools — no cloud, no API keys, no data leaving the car.
+by calling OBD-II tools. No cloud, no API keys, no data leaving the car.
 *Currently running against simulated OBD-II data.*
 
 **[patchcheck](https://github.com/iqureshi123/patchcheck)** · `Python` · `Docker`
@@ -110,25 +110,25 @@ right and a patch that passes are different things.
 
 **[chip8](https://github.com/iqureshi123/chip8)** · `C++` · `WebAssembly`
 
-A CHIP-8 emulator written from scratch — the same C++ core compiles natively and
+A CHIP-8 emulator written from scratch. The same C++ core compiles natively and
 to WebAssembly, so it runs in a browser with no install. Backed by 41 unit tests
 and an independently-authored public correctness ROM.
 ▶ **[Play it in your browser](https://iqureshi123.github.io/chip8/)**
 
 ---
 
-## Where this is going
+## 🔭 Where this is going
 
 - Taking **car-ai** off simulated data and onto a live ECU in a real vehicle
-- More systems work generally — I want to keep building at the layer where the abstraction leaks
-- Open to **Summer 2027 software engineering internships**
+- More systems work generally, I want to keep building at the layer where the abstraction leaks
+- Open to **Summer 2027 computer engineering and software engineering internships**
 
 ---
 
-## Get in touch
+## 📫 Get in touch
 
-I'm always happy to talk about anything
-that involves making software prove it actually works.
+I'm always happy to talk about anything that involves making software prove
+it actually works.
 
 <p>
   <a href="https://www.linkedin.com/in/ibrahimqureshi123/"><img src="https://img.shields.io/badge/LinkedIn-Ibrahim%20Qureshi-000?style=for-the-badge&logo=linkedin" alt="LinkedIn"></a>
