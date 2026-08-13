@@ -1,9 +1,4 @@
-<h1 align="center">Ibrahim Qureshi</h1>
-
-<p align="center">
-  <b>Computer Engineering @ University of Guelph</b> · B.Eng, Class of 2029<br>
-  Software Engineer, AI Training <b>@AfterQuery</b> (YC25) · Co-Founder <b>@LiveHub</b>
-</p>
+<h1 align="center">Hi there 👋, I'm Ibrahim</h1>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/ibrahimqureshi123/"><img src="https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin" alt="LinkedIn"></a>
@@ -14,15 +9,25 @@
 
 ## 👋 About Me
 
-I like building at the layer where software stops being abstract, a map that
-turns strangers' photographs into a permanent archive of a neighbourhood, a
-language model answering questions about your car over OBD-II, an emulator
-running a 1970s CPU in your browser.
+Currently, I'm a **Computer Engineering** student @ the **University of Guelph**
+in Canada, and **Software Engineer, AI Training @AfterQuery (YC25)**.
+
+What pulled me into computer engineering is the seam between software and
+hardware, the point where code has to survive contact with a real device. That's
+most of what I build. **car-ai** puts a local language model on a Raspberry Pi 5
+and has it query a car's ECU over OBD-II, so the whole loop runs inside the
+vehicle with nothing leaving it. **chip8** goes the other way, emulating a 1970s
+CPU precisely enough that original ROMs run unmodified. In between there's
+plenty of ordinary software: iOS apps, FastAPI backends, TypeScript frontends.
+
+The areas I'm pushing into are **embedded systems with AI running on-device**,
+**robotics**, and low-level systems work generally.
 
 Most of what I know about writing software came from one habit: proving it
-works. At **AfterQuery (YC25)** I wrote SWE-bench-style training tasks for
-frontier AI models, reading real bugs in codebases and building test
-harnesses that can tell a correct fix.
+works. At AfterQuery I write SWE-bench-style training tasks for frontier AI
+models, reading real bugs in real codebases and building test harnesses that can
+tell a correct fix from a plausible-looking one. If I say something works, I've
+run it.
 
 **Right now**
 
