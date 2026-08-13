@@ -120,7 +120,7 @@ patch that looks right and a patch that passes are different things.
 
 ## 📫 Let's Connect
 
-I'm always happy to talk about emulators, on-device inference, or anything
+I'm always happy to talk about anything
 that involves making software prove it actually works.
 
 <p>
