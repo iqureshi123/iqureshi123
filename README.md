@@ -12,7 +12,7 @@
 
 ---
 
-## 👋 About
+## 👋 About Me
 
 I like building at the layer where software stops being abstract, a map that
 turns strangers' photographs into a permanent archive of a neighbourhood, a
