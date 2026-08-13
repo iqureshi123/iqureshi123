@@ -7,7 +7,7 @@
 
 ---
 
-## 👋 About Me
+## 🧑‍💻 About Me
 
 Currently, I'm a **Computer Engineering** student @ the **University of Guelph**
 in Canada, and **Software Engineer, AI Training @AfterQuery (YC25)**.
