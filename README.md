@@ -9,33 +9,14 @@
 
 ## 🧑‍💻 About Me
 
-Currently, I'm a **Computer Engineering** student @ the **University of Guelph**
-in Canada, and **Software Engineer, AI Training @AfterQuery (YC25)**.
-
-What pulled me into computer engineering is the seam between software and
-hardware, the point where code has to survive contact with a real device. That's
-most of what I build. **car-ai** puts a local language model on a Raspberry Pi 5
-and has it query a car's ECU over OBD-II, so the whole loop runs inside the
-vehicle with nothing leaving it. **chip8** goes the other way, emulating a 1970s
-CPU precisely enough that original ROMs run unmodified. In between there's
-plenty of ordinary software: iOS apps, FastAPI backends, TypeScript frontends.
-
-The areas I'm pushing into are **embedded systems with AI running on-device**,
-**robotics**, and low-level systems work generally.
-
-Most of what I know about writing software came from one habit: proving it
-works. At AfterQuery I write SWE-bench-style training tasks for frontier AI
-models, reading real bugs in real codebases and building test harnesses that can
-tell a correct fix from a plausible-looking one. If I say something works, I've
-run it.
-
-**Right now**
-
-- 🔧 Building **car-ai**; a local LLM on a Raspberry Pi 5 answering questions about a car over OBD-II, with nothing leaving the vehicle
-- 💼 **Software Engineer, AI Training @ AfterQuery (YC25)**; evaluation tasks for frontier models
-- 📱 **Co-Founder @ LiveHub**; an iOS app matching students with study partners by course and interest
-- 🏆 **Winner, TECHNATION Data Intelligence track**, SummerHacks 2026
-- 🎓 **B.Eng Computer Engineering**, University of Guelph, expected May 2029
+Hi, I'm **Ibrahim Qureshi**, a Computer Engineering student at the **University
+of Guelph** and a Software Engineer on AI Training at **AfterQuery (YC25)**. I'm
+drawn to the seam between software and hardware, and to **embedded systems**,
+**on-device AI**, and **robotics**. So far I've built projects spanning local
+language models on a Raspberry Pi, an emulator that runs in the browser, iOS
+apps, and FastAPI backends. Whether it's low-level systems work or shipping a
+full-stack product, I enjoy building things that hold up when you actually run
+them.
 
 ---
 
