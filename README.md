@@ -9,7 +9,7 @@
 
 ## 🧑‍💻 About Me
 
-Hi, I'm **Ibrahim Qureshi**, a Computer Engineering student at the **University
+Computer Engineering student at the **University
 of Guelph** and a Software Engineer on AI Training at **AfterQuery (YC25)**. I'm
 drawn to the seam between software and hardware, and to **embedded systems**,
 **on-device AI**, and **robotics**. So far I've built projects spanning local
