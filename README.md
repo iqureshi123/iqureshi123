@@ -118,8 +118,3 @@ it actually works.
 <p>
   <a href="https://www.linkedin.com/in/ibrahimqureshi123/"><img src="https://img.shields.io/badge/LinkedIn-Ibrahim%20Qureshi-000?style=for-the-badge&logo=linkedin" alt="LinkedIn"></a>
 </p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=iqureshi123&show_icons=true&hide_border=true&theme=graywhite&hide=contribs" alt="GitHub stats" height="150">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=iqureshi123&layout=compact&hide_border=true&theme=graywhite&langs_count=6" alt="Top languages" height="150">
-</p>
