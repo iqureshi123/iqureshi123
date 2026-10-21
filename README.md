@@ -2,11 +2,15 @@
 
 <img src="./name.svg" width="680" alt="Ibrahim Qureshi. Machine learning + robotics. Open to Summer 2027 internships and co-ops." />
 
-<h3>Computer Engineering (Co-op) @ <img src="./guelph-logo.svg" width="142" height="46" alt="University of Guelph logo" /></h3>
-
-<p>Embedded Systems @ <strong>Gryphon Formula Racing</strong> <img src="./gryphon-racing-badge.svg" width="19" height="24" alt="Gryphon Racing crest" /><br>Technical Director @ <img src="./gdg-dark.svg#gh-dark-mode-only" width="177" height="20" alt="Google Developer Group" /><img src="./gdg-light.svg#gh-light-mode-only" width="177" height="20" alt="Google Developer Group" /><br>Previously, AI Training @ <img src="./afterquery-dark.svg#gh-dark-mode-only" width="84" height="20" alt="AfterQuery" /><img src="./afterquery-light.svg#gh-light-mode-only" width="84" height="20" alt="AfterQuery" /></p>
-
 <p><a href="https://www.linkedin.com/in/ibrahimqureshi123/"><img src="./linkedin.svg" height="28" alt="LinkedIn" /></a> &nbsp; <a href="https://github.com/iqureshi123/landmarked-summerhacks"><img src="./landmarked.svg" height="28" alt="Play LandMarked" /></a></p>
+
+</div>
+
+## 👨‍💻 About Me
+
+<div align="center">
+
+<p><a href="./about-dark.svg#gh-dark-mode-only"><picture><source media="(max-width:600px)" srcset="./about-mobile-dark.svg" /><img src="./about-dark.svg#gh-dark-mode-only" width="680" alt="Ibrahim Qureshi: Computer Engineering (Co-op) at University of Guelph; Embedded Systems at Gryphon Formula Racing; Technical Director at Google Developer Group; previously AI Training at AfterQuery. Interested in machine learning and robotics." /></picture></a><a href="./about-light.svg#gh-light-mode-only"><picture><source media="(max-width:600px)" srcset="./about-mobile-light.svg" /><img src="./about-light.svg#gh-light-mode-only" width="680" alt="Ibrahim Qureshi: Computer Engineering (Co-op) at University of Guelph; Embedded Systems at Gryphon Formula Racing; Technical Director at Google Developer Group; previously AI Training at AfterQuery. Interested in machine learning and robotics." /></picture></a></p>
 
 </div>
 
