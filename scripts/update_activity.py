@@ -76,15 +76,15 @@ def render(payload):
   <rect x=".5" y=".5" width="679" height="201" rx="12" fill="#0d1117" stroke="#30363d"/>
   <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif">
     <text x="26" y="35" font-size="16" font-weight="600" fill="#f0f6fc">@iqureshi123</text>
-    <text x="26" y="91" font-size="44" font-weight="650" fill="#d6ff4a">{total:,}</text>
+    <text x="26" y="91" font-size="44" font-weight="650" fill="#99b2d8">{total:,}</text>
     <text x="26" y="115" font-size="13" fill="#c9d1d9">contributions in the past year</text>
     <text x="26" y="145" font-size="12" fill="#9198a1">{repos} public repos · {active} active days</text>
     <text x="300" y="29" font-size="11" fill="#9198a1">Monthly contributions</text>
     <line x1="{left}" y1="{top}" x2="{right}" y2="{top}" stroke="#21262d"/>
     <line x1="{left}" y1="{bottom}" x2="{right}" y2="{bottom}" stroke="#30363d"/>
-    <path d="{area}" fill="#d6ff4a" fill-opacity=".13"/>
-    <path d="{line}" fill="none" stroke="#d6ff4a" stroke-width="2" stroke-linejoin="round"/>
-    {''.join(f'<circle cx="{x:.2f}" cy="{y:.2f}" r="2.5" fill="#d6ff4a"/>' for x, y in points)}
+    <path d="{area}" fill="#99b2d8" fill-opacity=".13"/>
+    <path d="{line}" fill="none" stroke="#99b2d8" stroke-width="2" stroke-linejoin="round"/>
+    {''.join(f'<circle cx="{x:.2f}" cy="{y:.2f}" r="2.5" fill="#99b2d8"/>' for x, y in points)}
     <text x="651" y="{top+4}" font-size="10" fill="#9198a1">{ceiling}</text>
     <text x="651" y="{bottom+4}" font-size="10" fill="#9198a1">0</text>
     <text x="{left}" y="163" font-size="10" fill="#9198a1">{start:%b %y}</text>
@@ -111,7 +111,7 @@ def render(payload):
     code_total = sum(languages.values())
     if code_total == 0:
         raise ValueError("No public language data; keeping the previous cards.")
-    colors = ["#d6ff4a", "#a6c864", "#7f9e58", "#5b7848", "#3b5034"]
+    colors = ["#9cb7d7", "#a8abc7", "#8daeb5", "#748ca4", "#526478"]
     bars, labels, cursor = [], [], 26.0
     for i, (name, size) in enumerate(selected):
         width = 628 * size / code_total

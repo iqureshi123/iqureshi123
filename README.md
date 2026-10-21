@@ -8,26 +8,25 @@
 
 </div>
 
-<div align="center">
-
-<img src="./mark.svg" width="680" alt="tinyinfer bench card: 1.14× behind llama.cpp on matched fp32, and 1.95× after the float64 fix." />
-
-### [tinyinfer](https://github.com/iqureshi123/tinyinfer)
-
-</div>
-
 ## 🛠️ Tech Stack
 
 <div align="center">
 
 <p><strong>Languages</strong></p>
-<p><img src="./languages.svg" width="208" alt="Python, C++, C, TypeScript" /></p>
+<p><img src="./full-languages.svg" alt="Python, TypeScript, JavaScript, Java, C++, C, Swift, HTML, CSS" /></p>
 
-<p><strong>Frameworks &amp; Platforms</strong></p>
-<p><img src="./platforms.svg" width="264" alt="React, FastAPI, Docker, Linux, Raspberry Pi" /></p>
+<p><strong>Frameworks</strong></p>
+<p><img src="./full-frameworks.svg" alt="FastAPI, Node.js, React, WebAssembly" /></p>
+
+<p><strong>Platforms</strong></p>
+<p><img src="./full-platforms.svg" alt="AWS, Supabase, Docker, Linux, SQLite, Raspberry Pi" /></p>
+
+<p><strong>Tools</strong></p>
+<p><img src="./full-tools.svg" alt="Git, GitHub, VS Code" /></p>
+<p><img src="./sql.svg" height="28" alt="SQL" /> <img src="./matlab.svg" height="28" alt="MATLAB" /> <img src="./autocad.svg" height="28" alt="AutoCAD" /> <img src="./swiftui.svg" height="28" alt="SwiftUI" /> <img src="./modal.svg" height="28" alt="Modal" /> <img src="./solidworks.svg" height="28" alt="SolidWorks" /> <img src="./metal.svg" height="28" alt="Metal" /></p>
 
 <p><strong>AI &amp; Agentic Tooling</strong></p>
-<p><img src="./claude.svg" height="28" alt="Claude Code" /> <img src="./cursor.svg" height="28" alt="Cursor" /> <img src="./codex.svg" height="28" alt="OpenAI Codex" /></p>
+<p><img src="./claude.svg" height="28" alt="Claude Code" /> <img src="./cursor.svg" height="28" alt="Cursor" /> <img src="./codex.svg" height="28" alt="OpenAI Codex" /> <img src="./openclaw.svg" height="28" alt="OpenClaw" /> <img src="./hermes.svg" height="28" alt="Hermes Agent, previously used" /></p>
 
 </div>
 
@@ -46,5 +45,13 @@
 <div align="center">
 
 <a href="https://www.linkedin.com/in/ibrahimqureshi123/"><img src="./linkedin.svg" height="28" alt="Connect on LinkedIn" /></a>
+
+</div>
+
+<div align="center">
+
+<img src="./mark.svg" width="680" alt="tinyinfer bench card: 1.14× behind llama.cpp on matched fp32, and 1.95× after the float64 fix." />
+
+### [tinyinfer](https://github.com/iqureshi123/tinyinfer)
 
 </div>
