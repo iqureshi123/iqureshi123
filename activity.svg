@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="202" viewBox="0 0 680 202" role="img" aria-labelledby="activity-title activity-desc">
+  <title id="activity-title">GitHub activity</title>
+  <desc id="activity-desc">152 contributions over the past year, 68 active days, and 11 public repositories. Monthly counts from Oct 2025 to Oct 2026, including partial first and last months. Updated 21 Oct 2026. Source: GitHub contribution calendar. Contributions can include anonymized private activity allowed by the profile settings.</desc>
+  <rect x=".5" y=".5" width="679" height="201" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif">
+    <text x="26" y="35" font-size="16" font-weight="600" fill="#f0f6fc">@iqureshi123</text>
+    <text x="26" y="91" font-size="44" font-weight="650" fill="#d6ff4a">152</text>
+    <text x="26" y="115" font-size="13" fill="#c9d1d9">contributions in the past year</text>
+    <text x="26" y="145" font-size="12" fill="#9198a1">11 public repos · 68 active days</text>
+    <text x="300" y="29" font-size="11" fill="#9198a1">Monthly contributions</text>
+    <line x1="300" y1="44" x2="644" y2="44" stroke="#21262d"/>
+    <line x1="300" y1="142" x2="644" y2="142" stroke="#30363d"/>
+    <path d="M 300.00 134.65 L 328.67 135.88 L 357.33 138.32 L 386.00 137.10 L 414.67 132.20 L 443.33 124.85 L 472.00 119.95 L 500.67 123.62 L 529.33 142.00 L 558.00 138.32 L 586.67 48.90 L 615.33 142.00 L 644.00 142.00 L 644 142 L 300 142 Z" fill="#d6ff4a" fill-opacity=".13"/>
+    <path d="M 300.00 134.65 L 328.67 135.88 L 357.33 138.32 L 386.00 137.10 L 414.67 132.20 L 443.33 124.85 L 472.00 119.95 L 500.67 123.62 L 529.33 142.00 L 558.00 138.32 L 586.67 48.90 L 615.33 142.00 L 644.00 142.00" fill="none" stroke="#d6ff4a" stroke-width="2" stroke-linejoin="round"/>
+    <circle cx="300.00" cy="134.65" r="2.5" fill="#d6ff4a"/><circle cx="328.67" cy="135.88" r="2.5" fill="#d6ff4a"/><circle cx="357.33" cy="138.32" r="2.5" fill="#d6ff4a"/><circle cx="386.00" cy="137.10" r="2.5" fill="#d6ff4a"/><circle cx="414.67" cy="132.20" r="2.5" fill="#d6ff4a"/><circle cx="443.33" cy="124.85" r="2.5" fill="#d6ff4a"/><circle cx="472.00" cy="119.95" r="2.5" fill="#d6ff4a"/><circle cx="500.67" cy="123.62" r="2.5" fill="#d6ff4a"/><circle cx="529.33" cy="142.00" r="2.5" fill="#d6ff4a"/><circle cx="558.00" cy="138.32" r="2.5" fill="#d6ff4a"/><circle cx="586.67" cy="48.90" r="2.5" fill="#d6ff4a"/><circle cx="615.33" cy="142.00" r="2.5" fill="#d6ff4a"/><circle cx="644.00" cy="142.00" r="2.5" fill="#d6ff4a"/>
+    <text x="651" y="48" font-size="10" fill="#9198a1">80</text>
+    <text x="651" y="146" font-size="10" fill="#9198a1">0</text>
+    <text x="300" y="163" font-size="10" fill="#9198a1">Oct 25</text>
+    <text x="472.0" y="163" text-anchor="middle" font-size="10" fill="#9198a1">Apr 26</text>
+    <text x="644" y="163" text-anchor="end" font-size="10" fill="#9198a1">Oct 26</text>
+    <text x="26" y="183" font-size="10" fill="#9198a1">Source: GitHub</text>
+    <text x="654" y="183" text-anchor="end" font-size="10" fill="#9198a1">Updated 21 Oct 2026</text>
+  </g>
+</svg>
