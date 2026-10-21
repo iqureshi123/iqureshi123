@@ -39,9 +39,9 @@ def panel(theme, mobile=False):
     key = "#8fc6b6" if dark else "#116b58"
     value = "#add1ec" if dark else "#185b8c"
     ink = "#e6edf3" if dark else "#24292f"
-    width, height = (340, 416) if mobile else (680, 294)
+    width, height = (340, 384) if mobile else (680, 248)
     parts = [f'<svg xmlns="{NS}" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="about-title about-description">',
-             '<title id="about-title">About Ibrahim Qureshi</title>',
+             '<title id="about-title">About Me</title>',
              '<desc id="about-description">Computer Engineering (Co-op) at the University of Guelph. Embedded Systems at Gryphon Formula Racing. Technical Director at Google Developer Group. Previously, AI Training at AfterQuery. Interests: machine learning and robotics.</desc>',
              f'<rect x=".5" y=".5" width="{width-1}" height="{height-1}" rx="10" fill="{bg}" stroke="{border}"/>']
 
@@ -50,9 +50,8 @@ def panel(theme, mobile=False):
         size = size or (15.5 if mobile else 17)
         parts.append(f'<text x="{x}" y="{y}" fill="{color}" font-family="{family}" font-size="{size}" font-weight="{600 if bold else 400}">{html.escape(content)}</text>')
 
+    parts.append(f'<g transform="translate(0 {-32 if mobile else -46})">')
     if mobile:
-        text(18, 31, "name:", key)
-        text(92, 31, "Ibrahim Qureshi")
         text(18, 63, "education:", key)
         text(18, 88, "Computer Engineering (Co-op)")
         text(18, 116, "@ University of Guelph")
@@ -68,8 +67,6 @@ def panel(theme, mobile=False):
         text(18, 369, "interests:", key)
         text(18, 395, "machine learning + robotics")
     else:
-        text(26, 36, "name:", key)
-        text(174, 36, "Ibrahim Qureshi")
         text(26, 82, "education:", key)
         text(174, 82, "Computer Engineering (Co-op) @ University of Guelph", size=16)
         text(26, 125, "current_roles:", key)
@@ -83,7 +80,7 @@ def panel(theme, mobile=False):
         parts.append(asset(f"afterquery-{theme}.svg", 308, 214, height=24))
         text(26, 270, "interests:", key)
         text(174, 270, "[machine learning, robotics]", size=16)
-    parts.append("</svg>\n")
+    parts.append("</g></svg>\n")
     return "".join(parts)
 
 
