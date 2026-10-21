@@ -4,7 +4,6 @@
 import argparse
 import datetime as dt
 import json
-from html import escape
 import os
 from pathlib import Path
 import subprocess
@@ -14,10 +13,6 @@ from collections import defaultdict
 ROOT = Path(__file__).resolve().parents[1]
 QUERY = '''{ user(login:"iqureshi123") {
   login repositories(privacy:PUBLIC) { totalCount }
-  codeRepositories: repositories(first:100,privacy:PUBLIC,isFork:false,ownerAffiliations:OWNER) {
-    pageInfo { hasNextPage }
-    nodes { isArchived languages(first:100) { edges { size node { name } } } }
-  }
   contributionsCollection {
     contributionCalendar { totalContributions weeks {
       contributionDays { date contributionCount }
@@ -70,21 +65,44 @@ def render(payload):
     area = f"{line} L {right} {bottom} L {left} {bottom} Z"
     span = f"{start:%b %Y} to {end:%b %Y}"
     middle = dt.date.fromisoformat(sorted(months)[len(months)//2] + "-01")
+    peak_index = counts.index(max(counts))
+    peak_x, peak_y = points[peak_index]
+    peak_month = dt.date.fromisoformat(sorted(months)[peak_index] + "-01")
+    peak_label = f"Most active: {peak_month:%b %Y}" if max(counts) else "Awaiting first contribution"
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="680" height="202" viewBox="0 0 680 202" role="img" aria-labelledby="activity-title activity-desc">
   <title id="activity-title">GitHub activity</title>
   <desc id="activity-desc">{total} contributions over the past year, {active} active days, and {repos} public repositories. Monthly counts from {span}, including partial first and last months. Updated {end:%d %b %Y}. Source: GitHub contribution calendar. Contributions can include anonymized private activity allowed by the profile settings.</desc>
+  <defs>
+    <linearGradient id="trace-color"><stop stop-color="#9cb3d2"/><stop offset=".55" stop-color="#b2b2c9"/><stop offset="1" stop-color="#9ebcc5"/></linearGradient>
+    <linearGradient id="trace-area" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#99b2d8" stop-opacity=".2"/><stop offset="1" stop-color="#99b2d8" stop-opacity=".02"/></linearGradient>
+    <clipPath id="trace-reveal"><rect class="trace-mask" x="{left-8}" y="{top-12}" width="{right-left+16}" height="{bottom-top+24}"/></clipPath>
+  </defs>
+  <style>
+    .trace-mask{{transform-box:fill-box;transform-origin:left center}}
+    .peak-halo{{opacity:.25}}
+    @media(prefers-reduced-motion:no-preference){{
+      .trace-mask{{animation:trace-in 1.8s cubic-bezier(.22,1,.36,1) both}}
+      .peak-halo{{animation:signal-pulse 5s cubic-bezier(.32,0,.67,1) infinite}}
+      @keyframes trace-in{{from{{transform:scaleX(0)}}to{{transform:scaleX(1)}}}}
+      @keyframes signal-pulse{{0%,100%{{opacity:.15}}50%{{opacity:.5}}}}
+    }}
+  </style>
   <rect x=".5" y=".5" width="679" height="201" rx="12" fill="#0d1117" stroke="#30363d"/>
   <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif">
     <text x="26" y="35" font-size="16" font-weight="600" fill="#f0f6fc">@iqureshi123</text>
     <text x="26" y="91" font-size="44" font-weight="650" fill="#99b2d8">{total:,}</text>
     <text x="26" y="115" font-size="13" fill="#c9d1d9">contributions in the past year</text>
     <text x="26" y="145" font-size="12" fill="#9198a1">{repos} public repos · {active} active days</text>
+    <text x="26" y="165" font-size="11" fill="#a6b3c4">{peak_label}</text>
     <text x="300" y="29" font-size="11" fill="#9198a1">Monthly contributions</text>
     <line x1="{left}" y1="{top}" x2="{right}" y2="{top}" stroke="#21262d"/>
     <line x1="{left}" y1="{bottom}" x2="{right}" y2="{bottom}" stroke="#30363d"/>
-    <path d="{area}" fill="#99b2d8" fill-opacity=".13"/>
-    <path d="{line}" fill="none" stroke="#99b2d8" stroke-width="2" stroke-linejoin="round"/>
-    {''.join(f'<circle cx="{x:.2f}" cy="{y:.2f}" r="2.5" fill="#99b2d8"/>' for x, y in points)}
+    <g clip-path="url(#trace-reveal)">
+      <path d="{area}" fill="url(#trace-area)"/>
+      <path d="{line}" fill="none" stroke="url(#trace-color)" stroke-width="2" stroke-linejoin="round"/>
+      {''.join(f'<circle cx="{x:.2f}" cy="{y:.2f}" r="2.5" fill="#a7b9d1"/>' for x, y in points)}
+      <circle class="peak-halo" cx="{peak_x:.2f}" cy="{peak_y:.2f}" r="8" fill="none" stroke="#c0c6da" stroke-width="1.5"/>
+    </g>
     <text x="651" y="{top+4}" font-size="10" fill="#9198a1">{ceiling}</text>
     <text x="651" y="{bottom+4}" font-size="10" fill="#9198a1">0</text>
     <text x="{left}" y="163" font-size="10" fill="#9198a1">{start:%b %y}</text>
@@ -95,49 +113,11 @@ def render(payload):
   </g>
 </svg>
 '''
-    code_repos = user["codeRepositories"]
-    if code_repos["pageInfo"]["hasNextPage"]:
-        raise ValueError("Repository list needs pagination; keeping the previous cards.")
-    languages = {}
-    for repo in code_repos["nodes"]:
-        if not repo["isArchived"]:
-            for edge in repo["languages"]["edges"]:
-                name = edge["node"]["name"]
-                languages[name] = languages.get(name, 0) + edge["size"]
-    ranked = sorted(languages.items(), key=lambda item: -item[1])
-    selected = ranked[:4]
-    if len(ranked) > 4:
-        selected.append(("Other", sum(size for _, size in ranked[4:])))
-    code_total = sum(languages.values())
-    if code_total == 0:
-        raise ValueError("No public language data; keeping the previous cards.")
-    colors = ["#9cb7d7", "#a8abc7", "#8daeb5", "#748ca4", "#526478"]
-    bars, labels, cursor = [], [], 26.0
-    for i, (name, size) in enumerate(selected):
-        width = 628 * size / code_total
-        bars.append(f'<rect x="{cursor:.3f}" y="57" width="{width:.3f}" height="15" fill="{colors[i]}"/>')
-        x, y = 26 + (i % 3) * 215, 102 + (i // 3) * 25
-        labels.append(f'<circle cx="{x+4}" cy="{y-4}" r="4" fill="{colors[i]}"/><text x="{x+16}" y="{y}" fill="#c9d1d9" font-size="12">{escape(name)} {size/code_total:.1%}</text>')
-        cursor += width
-    language_svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="680" height="161" viewBox="0 0 680 161" role="img" aria-labelledby="lang-title lang-desc">
-  <title id="lang-title">Most used languages</title>
-  <desc id="lang-desc">Public repository composition by GitHub language bytes, excluding forks and archived repositories. Not a skill rating. Updated {end:%d %b %Y}.</desc>
-  <rect x=".5" y=".5" width="679" height="160" rx="12" fill="#0d1117" stroke="#30363d"/>
-  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif">
-    <text x="26" y="32" fill="#f0f6fc" font-size="14" font-weight="600">Most used languages</text>
-    <defs><clipPath id="language-bar"><rect x="26" y="57" width="628" height="15" rx="5"/></clipPath></defs>
-    <g clip-path="url(#language-bar)">{''.join(bars)}</g>
-    {''.join(labels)}
-    <text x="26" y="145" fill="#9198a1" font-size="10">Public repositories · code bytes · excludes forks and archives</text>
-  </g>
-</svg>
-'''
     folders = [ROOT / "profile", ROOT / "public"] if (ROOT / "profile" / "README.md").exists() else [ROOT]
     for folder in folders:
         path = folder / "activity.svg"
         path.parent.mkdir(exist_ok=True)
         path.write_text(svg)
-        (folder / "top-languages.svg").write_text(language_svg)
     print(f"Rendered {total} contributions, {repos} public repos, {active} active days ({end}).")
 
 

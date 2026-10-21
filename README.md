@@ -36,8 +36,6 @@
 
 <a href="https://github.com/iqureshi123?tab=overview"><img src="./activity.svg" width="680" alt="GitHub contributions over the past year, grouped by month. Counts and refresh date are included in the graphic." /></a>
 
-<img src="./top-languages.svg" width="680" alt="Most used languages across public, non-fork, non-archived repositories, measured by code bytes. This is repository composition, not a skill rating." />
-
 </div>
 
 ## 🤝 Connect
