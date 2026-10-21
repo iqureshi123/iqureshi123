@@ -2,7 +2,7 @@
 
 <img src="./name.svg" width="680" alt="Ibrahim Qureshi. Machine learning + robotics. Open to Summer 2027 internships and co-ops." />
 
-<h3>Computer Engineering @ <img src="./guelph-logo.svg" width="166" height="54" alt="University of Guelph logo" /></h3>
+<h3>Computer Engineering (Co-op) @ <img src="./guelph-logo.svg" width="142" height="46" alt="University of Guelph logo" /></h3>
 
 <p>Embedded Systems @ <strong>Gryphon Formula Racing</strong> <img src="./gryphon-racing-badge.svg" width="19" height="24" alt="Gryphon Racing crest" /><br>Technical Director @ <img src="./gdg-dark.svg#gh-dark-mode-only" width="177" height="20" alt="Google Developer Group" /><img src="./gdg-light.svg#gh-light-mode-only" width="177" height="20" alt="Google Developer Group" /><br>Previously, AI Training @ <img src="./afterquery-dark.svg#gh-dark-mode-only" width="84" height="20" alt="AfterQuery" /><img src="./afterquery-light.svg#gh-light-mode-only" width="84" height="20" alt="AfterQuery" /></p>
 
