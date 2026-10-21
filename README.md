@@ -1,26 +1,57 @@
-# Ibrahim Qureshi
+<div align="center">
 
-Computer Engineering student at the **University of Guelph**. I work on embedded systems, local AI, and developer tools. Previously worked on AI training at **AfterQuery**.
+<img src="./name.svg" width="680" alt="Ibrahim Qureshi. Machine learning + robotics. Open to Summer 2027 internships and co-ops." />
 
-[LinkedIn](https://www.linkedin.com/in/ibrahimqureshi123/) · Open to **Summer 2027 internships**
+<h3>Computer Engineering (Co-op) @ <img src="./guelph-logo.svg" width="142" height="46" alt="University of Guelph logo" /></h3>
 
-## Selected work
+<p>Embedded Systems @ <strong>Gryphon Formula Racing</strong> <img src="./gryphon-racing-badge.svg" width="19" height="24" alt="Gryphon Racing crest" /><br>Technical Director @ <img src="./gdg-dark.svg#gh-dark-mode-only" width="177" height="20" alt="Google Developer Group" /><img src="./gdg-light.svg#gh-light-mode-only" width="177" height="20" alt="Google Developer Group" /><br>Previously, AI Training @ <img src="./afterquery-dark.svg#gh-dark-mode-only" width="84" height="20" alt="AfterQuery" /><img src="./afterquery-light.svg#gh-light-mode-only" width="84" height="20" alt="AfterQuery" /></p>
 
-**[tinyinfer](https://github.com/iqureshi123/tinyinfer)** · Python, C++, Metal<br>
-An LLM inference engine built from scratch, from the tokenizer and KV cache to quantization. Benchmarked within 1.14× of llama.cpp on matched FP32/CPU settings.
+<p><a href="https://www.linkedin.com/in/ibrahimqureshi123/"><img src="./linkedin.svg" height="28" alt="LinkedIn" /></a> &nbsp; <a href="https://github.com/iqureshi123/landmarked-summerhacks"><img src="./landmarked.svg" height="28" alt="Play LandMarked" /></a></p>
 
-**[chip8](https://github.com/iqureshi123/chip8)** · C++, WebAssembly<br>
-A CHIP-8 emulator with a shared native and browser core. **[Play Pong in your browser →](https://iqureshi123.github.io/chip8/)**
+</div>
 
-**[LandMarked](https://github.com/iqureshi123/landmarked-summerhacks)** · TypeScript, MapLibre<br>
-A location game where players claim real landmarks by photographing them. I built the frontend with a team of three at SummerHacks 2026.
+## 🛠️ Tech Stack
 
-**[patchcheck](https://github.com/iqureshi123/patchcheck)** · Python, Docker<br>
-Checks AI-generated patches against real test suites in isolated containers, with parallel runs and resumable results.
+<div align="center">
 
-Also building **[car-ai](https://github.com/iqureshi123/car-ai)**, a local diagnostic assistant designed for Raspberry Pi. Its tool layer uses simulated OBD-II data; the full chat loop and vehicle integration are not yet validated.
+<p><strong>Languages</strong></p>
+<p><img src="./full-languages.svg" alt="Python, TypeScript, JavaScript, Java, C++, C, Swift, HTML, CSS" /></p>
 
-## Tools I use
+<p><strong>Frameworks</strong></p>
+<p><img src="./full-frameworks.svg" alt="FastAPI, Node.js, React, GraphQL" /></p>
 
-**Languages:** Python, C++, C, TypeScript, Swift<br>
-**Software & hardware:** React, FastAPI, Linux, Docker, Raspberry Pi, Metal
+<p><strong>Platforms &amp; Cloud</strong></p>
+<p><img src="./full-platforms.svg" alt="AWS, Supabase, Docker, Linux, SQLite, Raspberry Pi, MySQL, Google Cloud, Azure" /></p>
+
+<p><strong>Tools</strong></p>
+<p><img src="./full-tools.svg" alt="Git, GitHub, VS Code" /></p>
+<p><img src="./sql.svg" height="28" alt="SQL" /> <img src="./matlab.svg" height="28" alt="MATLAB" /> <img src="./autocad.svg" height="28" alt="AutoCAD" /> <img src="./swiftui.svg" height="28" alt="SwiftUI" /> <img src="./modal.svg" height="28" alt="Modal" /> <img src="./solidworks.svg" height="28" alt="SolidWorks" /> <img src="./metal.svg" height="28" alt="Metal" /></p>
+
+<p><strong>AI &amp; Agentic Tooling</strong></p>
+<p><img src="./claude.svg" height="28" alt="Claude Code" /> <img src="./cursor.svg" height="28" alt="Cursor" /> <img src="./codex.svg" height="28" alt="OpenAI Codex" /> <img src="./openclaw.svg" height="28" alt="OpenClaw" /> <img src="./hermes.svg" height="28" alt="Hermes Agent, previously used" /></p>
+
+</div>
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+<a href="https://github.com/iqureshi123?tab=overview"><img src="./activity.svg" width="680" alt="GitHub contributions over the past year, grouped by month. Counts and refresh date are included in the graphic." /></a>
+
+</div>
+
+## 🤝 Connect
+
+<div align="center">
+
+<p><a href="https://www.linkedin.com/in/ibrahimqureshi123/"><img src="./linkedin.svg" height="28" alt="Connect on LinkedIn" /></a> &nbsp; <a href="https://x.com/IbrahimQur82272"><img src="./twitter.svg" height="28" alt="Twitter: @IbrahimQur82272" /></a></p>
+
+</div>
+
+<div align="center">
+
+<img src="./mark.svg" width="680" alt="tinyinfer bench card: 1.14× behind llama.cpp on matched fp32, and 1.95× after the float64 fix." />
+
+### [tinyinfer](https://github.com/iqureshi123/tinyinfer)
+
+</div>
