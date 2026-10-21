@@ -1,10 +1,12 @@
 <div align="center">
 
-<img src="./name.svg" width="680" alt="Ibrahim Qureshi. Computer Engineering. Machine learning + robotics. Open to Summer 2027 internships." />
+<img src="./name.svg" width="680" alt="Ibrahim Qureshi. Machine learning + robotics. Open to Summer 2027 internships and co-ops." />
 
-<p>Computer Engineering @ <strong>University of Guelph</strong><br>Embedded systems @ <strong>Gryphon Formula Racing</strong> · Technical Director @ <strong>Google Developer Group</strong><br>Previously, AI training @ <strong>AfterQuery</strong></p>
+<h3>Computer Engineering @ <img src="./guelph-logo.svg" width="166" height="54" alt="University of Guelph logo" /></h3>
 
-<p><a href="https://www.linkedin.com/in/ibrahimqureshi123/"><img src="./linkedin.svg" height="28" alt="LinkedIn" /></a> &nbsp; <a href="https://iqureshi123.github.io/chip8/"><img src="./chip8.svg" height="28" alt="Play chip-8" /></a></p>
+<p>Embedded Systems @ <strong>Gryphon Formula Racing</strong> <img src="./gryphon-racing-badge.svg" width="19" height="24" alt="Gryphon Racing crest" /><br>Technical Director @ <img src="./gdg-dark.svg#gh-dark-mode-only" width="177" height="20" alt="Google Developer Group" /><img src="./gdg-light.svg#gh-light-mode-only" width="177" height="20" alt="Google Developer Group" /><br>Previously, AI Training @ <img src="./afterquery-dark.svg#gh-dark-mode-only" width="84" height="20" alt="AfterQuery" /><img src="./afterquery-light.svg#gh-light-mode-only" width="84" height="20" alt="AfterQuery" /></p>
+
+<p><a href="https://www.linkedin.com/in/ibrahimqureshi123/"><img src="./linkedin.svg" height="28" alt="LinkedIn" /></a> &nbsp; <a href="https://github.com/iqureshi123/landmarked-summerhacks"><img src="./landmarked.svg" height="28" alt="Play LandMarked" /></a></p>
 
 </div>
 
@@ -16,10 +18,10 @@
 <p><img src="./full-languages.svg" alt="Python, TypeScript, JavaScript, Java, C++, C, Swift, HTML, CSS" /></p>
 
 <p><strong>Frameworks</strong></p>
-<p><img src="./full-frameworks.svg" alt="FastAPI, Node.js, React, WebAssembly" /></p>
+<p><img src="./full-frameworks.svg" alt="FastAPI, Node.js, React, GraphQL" /></p>
 
-<p><strong>Platforms</strong></p>
-<p><img src="./full-platforms.svg" alt="AWS, Supabase, Docker, Linux, SQLite, Raspberry Pi" /></p>
+<p><strong>Platforms &amp; Cloud</strong></p>
+<p><img src="./full-platforms.svg" alt="AWS, Supabase, Docker, Linux, SQLite, Raspberry Pi, MySQL, Google Cloud, Azure" /></p>
 
 <p><strong>Tools</strong></p>
 <p><img src="./full-tools.svg" alt="Git, GitHub, VS Code" /></p>
@@ -42,7 +44,7 @@
 
 <div align="center">
 
-<a href="https://www.linkedin.com/in/ibrahimqureshi123/"><img src="./linkedin.svg" height="28" alt="Connect on LinkedIn" /></a>
+<p><a href="https://www.linkedin.com/in/ibrahimqureshi123/"><img src="./linkedin.svg" height="28" alt="Connect on LinkedIn" /></a> &nbsp; <a href="https://x.com/IbrahimQur82272"><img src="./twitter.svg" height="28" alt="Twitter: @IbrahimQur82272" /></a></p>
 
 </div>
 

@@ -75,15 +75,14 @@ def render(payload):
   <defs>
     <linearGradient id="trace-color"><stop stop-color="#9cb3d2"/><stop offset=".55" stop-color="#b2b2c9"/><stop offset="1" stop-color="#9ebcc5"/></linearGradient>
     <linearGradient id="trace-area" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#99b2d8" stop-opacity=".2"/><stop offset="1" stop-color="#99b2d8" stop-opacity=".02"/></linearGradient>
-    <clipPath id="trace-reveal"><rect class="trace-mask" x="{left-8}" y="{top-12}" width="{right-left+16}" height="{bottom-top+24}"/></clipPath>
   </defs>
   <style>
-    .trace-mask{{transform-box:fill-box;transform-origin:left center}}
+    .trace-line{{stroke-dasharray:1000;stroke-dashoffset:0}}
     .peak-halo{{opacity:.25}}
     @media(prefers-reduced-motion:no-preference){{
-      .trace-mask{{animation:trace-in 1.8s cubic-bezier(.22,1,.36,1) both}}
+      .trace-line{{animation:trace-in 1.8s cubic-bezier(.22,1,.36,1) both}}
       .peak-halo{{animation:signal-pulse 5s cubic-bezier(.32,0,.67,1) infinite}}
-      @keyframes trace-in{{from{{transform:scaleX(0)}}to{{transform:scaleX(1)}}}}
+      @keyframes trace-in{{from{{stroke-dashoffset:1000}}to{{stroke-dashoffset:0}}}}
       @keyframes signal-pulse{{0%,100%{{opacity:.15}}50%{{opacity:.5}}}}
     }}
   </style>
@@ -97,9 +96,9 @@ def render(payload):
     <text x="300" y="29" font-size="11" fill="#9198a1">Monthly contributions</text>
     <line x1="{left}" y1="{top}" x2="{right}" y2="{top}" stroke="#21262d"/>
     <line x1="{left}" y1="{bottom}" x2="{right}" y2="{bottom}" stroke="#30363d"/>
-    <g clip-path="url(#trace-reveal)">
+    <g>
       <path d="{area}" fill="url(#trace-area)"/>
-      <path d="{line}" fill="none" stroke="url(#trace-color)" stroke-width="2" stroke-linejoin="round"/>
+      <path class="trace-line" pathLength="1000" d="{line}" fill="none" stroke="url(#trace-color)" stroke-width="2" stroke-linejoin="round"/>
       {''.join(f'<circle cx="{x:.2f}" cy="{y:.2f}" r="2.5" fill="#a7b9d1"/>' for x, y in points)}
       <circle class="peak-halo" cx="{peak_x:.2f}" cy="{peak_y:.2f}" r="8" fill="none" stroke="#c0c6da" stroke-width="1.5"/>
     </g>
