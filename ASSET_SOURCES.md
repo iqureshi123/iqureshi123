@@ -9,3 +9,5 @@
 - Contribution chart: GitHub contribution calendar for @iqureshi123. Refresh through scripts/update_activity.py and the profile-activity workflow.
 
 The TinyInfer SVG is the preserved original from Cursor commit 655d7c4. SHA-256: 117583f9ffe07ef923e8a359255bd3e72e2b7d2c6e3d0abc2d7fa3538e6e9c16.
+
+Header typography and accessibility references: [GitHub Primer typography](https://primer.style/product/primitives/typography/) and [Primer motion guidance](https://primer.style/accessibility/design-guidance/motion-and-animation/). The header is static so both the focus and availability remain visible. Run `python3 scripts/build_header.py` to rebuild the desktop/mobile and dark/light variants. No remote fonts or animation services are required.

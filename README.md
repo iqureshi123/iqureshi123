@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./name.svg" width="680" alt="Ibrahim Qureshi. Machine learning + robotics. Open to Summer 2027 internships and co-ops." />
+<p><picture><source media="(max-width:600px)" srcset="./name-mobile-dark.svg" /><img src="./name.svg#gh-dark-mode-only" width="680" alt="Ibrahim Qureshi. Machine learning + robotics. Open to Summer 2027 internships and co-ops." /></picture><picture><source media="(max-width:600px)" srcset="./name-mobile-light.svg" /><img src="./name-light.svg#gh-light-mode-only" width="680" alt="Ibrahim Qureshi. Machine learning + robotics. Open to Summer 2027 internships and co-ops." /></picture></p>
 
 <p><a href="https://www.linkedin.com/in/ibrahimqureshi123/"><img src="./linkedin.svg" height="28" alt="LinkedIn" /></a> &nbsp; <a href="https://github.com/iqureshi123/landmarked-summerhacks"><img src="./landmarked.svg" height="28" alt="Play LandMarked" /></a></p>
 

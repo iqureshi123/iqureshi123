@@ -11,6 +11,7 @@ ASSETS = ROOT / "profile" if (ROOT / "profile" / "README.md").exists() else ROOT
 NS = "http://www.w3.org/2000/svg"
 ET.register_namespace("", NS)
 MONO = "ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace"
+SANS = "Arial,Helvetica,sans-serif"
 
 
 def asset(name, x, y, width=None, height=None):
@@ -39,48 +40,49 @@ def panel(theme, mobile=False):
     key = "#8fc6b6" if dark else "#116b58"
     value = "#add1ec" if dark else "#185b8c"
     ink = "#e6edf3" if dark else "#24292f"
-    width, height = (340, 384) if mobile else (680, 248)
+    width, height = (340, 382) if mobile else (680, 248)
     parts = [f'<svg xmlns="{NS}" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="about-title about-description">',
              '<title id="about-title">About Me</title>',
              '<desc id="about-description">Computer Engineering (Co-op) at the University of Guelph. Embedded Systems at Gryphon Formula Racing. Technical Director at Google Developer Group. Previously, AI Training at AfterQuery. Interests: machine learning and robotics.</desc>',
              f'<rect x=".5" y=".5" width="{width-1}" height="{height-1}" rx="10" fill="{bg}" stroke="{border}"/>']
 
-    def text(x, y, content, color=value, size=None, sans=False, bold=False):
-        family = "-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif" if sans else MONO
-        size = size or (15.5 if mobile else 17)
+    def text(x, y, content, color=value, size=16, mono=False, bold=False):
+        family = MONO if mono else SANS
         parts.append(f'<text x="{x}" y="{y}" fill="{color}" font-family="{family}" font-size="{size}" font-weight="{600 if bold else 400}">{html.escape(content)}</text>')
 
-    parts.append(f'<g transform="translate(0 {-32 if mobile else -46})">')
+    def label(x, y, content):
+        text(x, y, content, key, 14.5, mono=True)
+
     if mobile:
-        text(18, 63, "education:", key)
-        text(18, 88, "Computer Engineering (Co-op)")
-        text(18, 116, "@ University of Guelph")
-        text(18, 154, "current_roles:", key)
-        text(28, 182, "- Embedded Systems @")
-        text(46, 209, "Gryphon Formula Racing", ink, 16, sans=True, bold=True)
-        parts.append(asset("gryphon-racing-badge.svg", 257, 190, height=24))
-        text(28, 242, "- Technical Director @")
-        parts.append(asset(f"gdg-{theme}.svg", 46, 252, height=24))
-        text(18, 305, "previously:", key)
-        text(18, 331, "AI Training @")
-        parts.append(asset(f"afterquery-{theme}.svg", 151, 313, height=24))
-        text(18, 369, "interests:", key)
-        text(18, 395, "machine learning + robotics")
+        label(18, 30, "education:")
+        text(18, 55, "Computer Engineering (Co-op)")
+        text(18, 79, "@ University of Guelph")
+        label(18, 117, "current_roles:")
+        text(28, 145, "- Embedded Systems @")
+        parts.append(asset("gryphon-racing-badge.svg", 28, 159, height=24))
+        text(56, 178, "Gryphon Formula Racing", ink, bold=True)
+        text(28, 211, "- Technical Director @")
+        parts.append(asset(f"gdg-{theme}.svg", 46, 223, height=24))
+        label(18, 270, "previously:")
+        text(18, 296, "AI Training @")
+        parts.append(asset(f"afterquery-{theme}.svg", 128, 277, height=24))
+        label(18, 334, "interests:")
+        text(18, 360, "machine learning + robotics")
     else:
-        text(26, 82, "education:", key)
-        text(174, 82, "Computer Engineering (Co-op) @ University of Guelph", size=16)
-        text(26, 125, "current_roles:", key)
-        text(46, 159, "- Embedded Systems @", size=16)
-        text(249, 159, "Gryphon Formula Racing", ink, 17, sans=True, bold=True)
-        parts.append(asset("gryphon-racing-badge.svg", 475, 140, height=24))
-        text(46, 193, "- Technical Director @", size=16)
-        parts.append(asset(f"gdg-{theme}.svg", 267, 174, height=24))
-        text(26, 233, "previously:", key)
-        text(174, 233, "AI Training @", size=16)
-        parts.append(asset(f"afterquery-{theme}.svg", 308, 214, height=24))
-        text(26, 270, "interests:", key)
-        text(174, 270, "[machine learning, robotics]", size=16)
-    parts.append("</g></svg>\n")
+        label(26, 36, "education:")
+        text(136, 36, "Computer Engineering (Co-op) @ University of Guelph")
+        label(26, 78, "current_roles:")
+        text(42, 111, "- Embedded Systems @")
+        parts.append(asset("gryphon-racing-badge.svg", 226, 92, height=24))
+        text(254, 111, "Gryphon Formula Racing", ink, 17, bold=True)
+        text(42, 145, "- Technical Director @")
+        parts.append(asset(f"gdg-{theme}.svg", 213, 126, height=24))
+        label(26, 187, "previously:")
+        text(136, 187, "AI Training @")
+        parts.append(asset(f"afterquery-{theme}.svg", 246, 168, height=24))
+        label(26, 224, "interests:")
+        text(136, 224, "[machine learning, robotics]")
+    parts.append("</svg>\n")
     return "".join(parts)
 
 
