@@ -1,6 +1,6 @@
 <div align="center">
 
-<p><picture><source media="(max-width:600px)" srcset="./name-mobile-dark.svg" /><img src="./name.svg#gh-dark-mode-only" width="680" alt="Ibrahim Qureshi. Machine learning + robotics. Open to Summer 2027 internships and co-ops." /></picture><picture><source media="(max-width:600px)" srcset="./name-mobile-light.svg" /><img src="./name-light.svg#gh-light-mode-only" width="680" alt="Ibrahim Qureshi. Machine learning + robotics. Open to Summer 2027 internships and co-ops." /></picture></p>
+<p><picture><source media="(max-width:600px)" srcset="./name-mobile-dark.svg?v=20261101-fade" /><img src="./name.svg?v=20261101-fade#gh-dark-mode-only" width="680" alt="Ibrahim Qureshi. Machine learning + robotics. Open to Summer 2027 internships and co-ops." /></picture><picture><source media="(max-width:600px)" srcset="./name-mobile-light.svg?v=20261101-fade" /><img src="./name-light.svg?v=20261101-fade#gh-light-mode-only" width="680" alt="Ibrahim Qureshi. Machine learning + robotics. Open to Summer 2027 internships and co-ops." /></picture></p>
 
 <p><a href="https://www.linkedin.com/in/ibrahimqureshi123/"><img src="./linkedin.svg" height="28" alt="LinkedIn" /></a> &nbsp; <a href="https://github.com/iqureshi123/landmarked-summerhacks"><img src="./landmarked.svg" height="28" alt="Play LandMarked" /></a></p>
 
@@ -10,7 +10,7 @@
 
 <div align="center">
 
-<p><a href="./about-dark.svg#gh-dark-mode-only"><picture><source media="(max-width:600px)" srcset="./about-mobile-dark.svg" /><img src="./about-dark.svg#gh-dark-mode-only" width="680" alt="Computer Engineering (Co-op) at University of Guelph; Embedded Systems at Gryphon Formula Racing; Technical Director at Google Developer Group; previously AI Training at AfterQuery. Interested in machine learning and robotics." /></picture></a><a href="./about-light.svg#gh-light-mode-only"><picture><source media="(max-width:600px)" srcset="./about-mobile-light.svg" /><img src="./about-light.svg#gh-light-mode-only" width="680" alt="Computer Engineering (Co-op) at University of Guelph; Embedded Systems at Gryphon Formula Racing; Technical Director at Google Developer Group; previously AI Training at AfterQuery. Interested in machine learning and robotics." /></picture></a></p>
+<p><a href="./about-dark.svg#gh-dark-mode-only"><picture><source media="(max-width:600px)" srcset="./about-mobile-dark.svg?v=20261101-spacing" /><img src="./about-dark.svg?v=20261101-spacing#gh-dark-mode-only" width="680" alt="Computer Engineering (Co-op) at University of Guelph; Embedded Systems at Gryphon Formula Racing; Technical Director at Google Developer Group; previously AI Training at AfterQuery. Interested in machine learning and robotics." /></picture></a><a href="./about-light.svg#gh-light-mode-only"><picture><source media="(max-width:600px)" srcset="./about-mobile-light.svg?v=20261101-spacing" /><img src="./about-light.svg?v=20261101-spacing#gh-light-mode-only" width="680" alt="Computer Engineering (Co-op) at University of Guelph; Embedded Systems at Gryphon Formula Racing; Technical Director at Google Developer Group; previously AI Training at AfterQuery. Interested in machine learning and robotics." /></picture></a></p>
 
 </div>
 

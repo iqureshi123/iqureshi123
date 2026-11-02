@@ -1,7 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="680" height="136" viewBox="0 0 680 136" role="img" aria-labelledby="name-title name-desc">
 <title id="name-title">Ibrahim Qureshi</title>
 <desc id="name-desc">Interested in machine learning and robotics. Open to Summer 2027 internships and co-ops.</desc>
+<style>
+        .interest{opacity:1}.availability{opacity:0}.reduced{display:none}
+        @media(prefers-reduced-motion:no-preference){
+          .interest{animation:interest-fade 14s cubic-bezier(.45,0,.55,1) infinite}
+          .availability{animation:availability-fade 14s cubic-bezier(.45,0,.55,1) infinite}
+          @keyframes interest-fade{
+            0%,38%,100%{opacity:1;transform:translateY(0);filter:blur(0)}
+            45%{opacity:0;transform:translateY(-6px);filter:blur(3px)}
+            88%{opacity:0;transform:translateY(6px);filter:blur(3px)}
+            95%{opacity:1;transform:translateY(0);filter:blur(0)}
+          }
+          @keyframes availability-fade{
+            0%,38%{opacity:0;transform:translateY(6px);filter:blur(3px)}
+            45%,88%{opacity:1;transform:translateY(0);filter:blur(0)}
+            95%{opacity:0;transform:translateY(-6px);filter:blur(3px)}
+            100%{opacity:0;transform:translateY(6px);filter:blur(3px)}
+          }
+        }
+        @media(prefers-reduced-motion:reduce){.cycle{display:none}.reduced{display:inline}}
+        </style>
+<defs><linearGradient id="focus-gradient" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#a7bddb"/><stop offset=".5" stop-color="#c8b9dd"/><stop offset="1" stop-color="#a5cbbb"/></linearGradient></defs>
 <text x="340" y="55" text-anchor="middle" fill="#edf0f6" font-family="'Avenir Next','Segoe UI',Arial,sans-serif" font-size="46" font-weight="650" letter-spacing="-1">Ibrahim Qureshi</text>
+<g class="cycle"><g class="interest">
+<text x="340" y="101" text-anchor="middle" fill="url(#focus-gradient)" font-family="'Avenir Next','Segoe UI',Arial,sans-serif" font-size="21" font-weight="500" letter-spacing="0">Machine learning + robotics</text>
+</g><g class="availability">
+<text x="340" y="101" text-anchor="middle" fill="url(#focus-gradient)" font-family="'Avenir Next','Segoe UI',Arial,sans-serif" font-size="17.5" font-weight="500" letter-spacing="0">Open to Summer 2027 internships &amp; co-ops</text>
+</g></g><g class="reduced">
 <text x="340" y="90" text-anchor="middle" fill="#a5cbbb" font-family="'Avenir Next','Segoe UI',Arial,sans-serif" font-size="21" font-weight="500" letter-spacing="0">Machine learning + robotics</text>
 <text x="340" y="119" text-anchor="middle" fill="#9da7b3" font-family="'Avenir Next','Segoe UI',Arial,sans-serif" font-size="13" font-weight="400" letter-spacing="0">Open to Summer 2027 internships &amp; co-ops</text>
-</svg>
+</g></svg>
