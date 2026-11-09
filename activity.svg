@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="680" height="202" viewBox="0 0 680 202" role="img" aria-labelledby="activity-title activity-desc">
   <title id="activity-title">GitHub activity</title>
-  <desc id="activity-desc">148 contributions over the past year, 66 active days, and 11 public repositories. Monthly counts from Nov 2025 to Nov 2026, including partial first and last months. Updated 08 Nov 2026. Source: GitHub contribution calendar. Contributions can include anonymized private activity allowed by the profile settings.</desc>
+  <desc id="activity-desc">147 contributions over the past year, 66 active days, and 11 public repositories. Monthly counts from Nov 2025 to Nov 2026, including partial first and last months. Updated 09 Nov 2026. Source: GitHub contribution calendar. Contributions can include anonymized private activity allowed by the profile settings.</desc>
   <defs>
     <linearGradient id="trace-color"><stop stop-color="#9cb3d2"/><stop offset=".55" stop-color="#b2b2c9"/><stop offset="1" stop-color="#9ebcc5"/></linearGradient>
     <linearGradient id="trace-area" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#99b2d8" stop-opacity=".2"/><stop offset="1" stop-color="#99b2d8" stop-opacity=".02"/></linearGradient>
@@ -18,7 +18,7 @@
   <rect x=".5" y=".5" width="679" height="201" rx="12" fill="#0d1117" stroke="#30363d"/>
   <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif">
     <text x="26" y="35" font-size="16" font-weight="600" fill="#f0f6fc">@iqureshi123</text>
-    <text x="26" y="91" font-size="44" font-weight="650" fill="#99b2d8">148</text>
+    <text x="26" y="91" font-size="44" font-weight="650" fill="#99b2d8">147</text>
     <text x="26" y="115" font-size="13" fill="#c9d1d9">contributions in the past year</text>
     <text x="26" y="145" font-size="12" fill="#9198a1">11 public repos · 66 active days</text>
     <text x="26" y="165" font-size="11" fill="#a6b3c4">Most active: Aug 2026</text>
@@ -37,6 +37,6 @@
     <text x="472.0" y="163" text-anchor="middle" font-size="10" fill="#9198a1">May 26</text>
     <text x="644" y="163" text-anchor="end" font-size="10" fill="#9198a1">Nov 26</text>
     <text x="26" y="183" font-size="10" fill="#9198a1">Source: GitHub</text>
-    <text x="654" y="183" text-anchor="end" font-size="10" fill="#9198a1">Updated 08 Nov 2026</text>
+    <text x="654" y="183" text-anchor="end" font-size="10" fill="#9198a1">Updated 09 Nov 2026</text>
   </g>
 </svg>
